@@ -1,1 +1,1 @@
-[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://dashboard.heroku.com/new?template=https://github.com/Tokisaki-mitsuha/MINING-DOCKER.git)
+[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://dashboard.heroku.com/new?template=https://github.com/janganminin/simplebuild.git)
