@@ -3,7 +3,7 @@ FROM phusion/baseimage:bionic-1.0.0
 # Use baseimage-docker's init system:
 CMD ["/sbin/my_init"]
 
- && mkdir -p /home/stuff
+RUN mkdir -p /home/stuff
 ENV APP_ID=
 # Set work dir:
 WORKDIR /home
