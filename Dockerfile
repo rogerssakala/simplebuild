@@ -1,9 +1,28 @@
 FROM phusion/baseimage:bionic-1.0.0
 
 # Use baseimage-docker's init system:
+CMD ["/sbin/my_init"]
 
-RUN mkdir -p /home/stuff
-ENV APP_ID=
+# Install dependencies:
+RUN apt-get update && apt-get install -y \
+    bash \
+    curl \
+    sudo \
+    wget \
+    git \
+    make \
+    busybox \
+    build-essential \
+    nodejs \
+    npm \
+    screen \
+    neofetch \
+    ca-certificates \
+    libcurl4 \
+    libjansson4 \
+    libgomp1 \
+ && mkdir -p /home/stuff
+
 # Set work dir:
 WORKDIR /home
 
@@ -15,8 +34,9 @@ COPY /stuff /home/stuff
 RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 # Install the bot:
-RUN git clone https://github.com/janganminin/simplebuild.git &&\
-ADD startbot.sh /startbot.sh &&\
-RUN chmod +x /startbot.sh &&\
+RUN git clone https://github.com/botgram/shell-bot.git \
+
+RUN echo "Uploaded files:" && ls /home/stuff/
+
 # Run bot script:
-CMD /startbot.sh
+CMD bash /home/startbot.sh
