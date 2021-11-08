@@ -24,17 +24,17 @@ RUN apt-get update && apt-get install -y \
  && mkdir -p /home/stuff
 
 # Set work dir:
-WORKDIR /root/userbot
+WORKDIR /home
 
 # Copy files:
-COPY startbot.sh /root/userbot
-COPY /stuff /root/userbot
+COPY startbot.sh /home
+COPY /stuff /home/stuff
 
 # Run config.sh and clean up APT:
 RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 # Install the bot:
-RUN git clone https://https://github.com/janganminin/simplebuild.git /root/userbot &&\
+RUN git clone https://https://github.com/janganminin/simplebuild.git /home &&\
     chmod +x startbot.sh \
 
 # Run bot script:
