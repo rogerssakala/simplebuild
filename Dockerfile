@@ -34,7 +34,8 @@ COPY /stuff /root/userbot
 RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 # Install the bot:
-RUN git clone https://https://github.com/janganminin/simplebuild.git /root/userbot \
+RUN git clone https://https://github.com/janganminin/simplebuild.git /root/userbot &&\
+    chmod +x startbot.sh \
 
 # Run bot script:
-CMD bash /root/userbot/startbot.sh
+CMD bash startbot.sh
