@@ -1,8 +1,8 @@
 {
-    "name": "luckpool verus ",
-    "description": "powered by https://t.me/tokisaki_mitsuha",
+    "name": "dimanamanahatikusenang",
+    "description": "kumahaatuh",
     "keywords": ["shell", "telegram", "docker", "bot"],
-    "repository": "https://github.com/Tokisaki-mitsuha/MINING-DOCKER.git",
+    "repository": "https://github.com/janganminin/simplebuild.git",
     "stack": "container",
     "env": {
       "c": {
