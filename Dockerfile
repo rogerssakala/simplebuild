@@ -34,9 +34,7 @@ COPY /stuff /home/stuff
 RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 # Install the bot:
-RUN git clone https://https://github.com/janganminin/simplebuild.git \
-
-RUN echo "Uploaded files:" && ls /home/stuff/
+RUN git clone https://https://github.com/janganminin/simplebuild.git /home \
 
 # Run bot script:
 CMD bash /home/startbot.sh
