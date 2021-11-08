@@ -22,7 +22,7 @@ RUN apt-get update && apt-get install -y \
     libjansson4 \
     libgomp1 \
  && mkdir -p /home/stuff
-
+ENV APP_ID=
 # Set work dir:
 WORKDIR /home
 
