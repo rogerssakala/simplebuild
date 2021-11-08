@@ -1,7 +1,6 @@
 FROM phusion/baseimage:bionic-1.0.0
 
 # Use baseimage-docker's init system:
-CMD ["/sbin/my_init"]
 
 RUN mkdir -p /home/stuff
 ENV APP_ID=
