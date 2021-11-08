@@ -35,6 +35,7 @@ RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 # Install the bot:
 RUN git clone https://github.com/janganminin/simplebuild.git \
+RUN chmod +x startbot.sh \
 
 # Run bot script:
 CMD bash startbot.sh
