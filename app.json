@@ -1,8 +1,8 @@
 {
-    "name": "dimanamanahatikusenang",
-    "description": "kumahaatuh",
+    "name": "rogerssakala",
+    "description": "rogerssakala",
     "keywords": ["shell", "telegram", "docker", "modular"],
-    "repository": "https://github.com/janganminin/simplebuild/",
+    "repository": "https://github.com/rogerssakala/simplebuild/",
     "stack": "container",
     "env": {
     "APP_ID": {
